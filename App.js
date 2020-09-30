@@ -48,12 +48,15 @@ const theme = {
 const Main = () => {
   const [splashShown, setSplash] = React.useState(false);
   const [isLogin, setLogin] = React.useState(false);
+
+  function handleChange(newValue){
+    setLogin(newValue);
+  }
   
   return (
     <PaperProvider theme={theme}>
       <NavigationContainer>
         <StatusBar backgroundColor="#62991a" />
-
         {isLogin ? 
         <DrawerNav.Navigator>
           <DrawerNav.Screen name="token" component={TokenScreen}/>
@@ -69,7 +72,7 @@ const Main = () => {
             <ProfileStack.Screen name="verify" component={VerifyMobile} />
             <ProfileStack.Screen name="driver">
               {(props) => 
-              <DriverDetails props={props} setLogin={setLogin} />}
+              <DriverDetails props={props} setLogin={handleChange} />}
             </ProfileStack.Screen>
 
           </ProfileStack.Navigator>
