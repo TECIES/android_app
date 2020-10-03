@@ -1,13 +1,8 @@
 import React from "react";
 import {
-  Text,
-  TextInput,
   Button,
   Headline,
-  Paragraph,
   DarkTheme,
-  Divider,
-  Avatar,
 } from "react-native-paper";
 import { StyleSheet, View, Image } from "react-native";
 import AsyncStorage from '@react-native-community/async-storage';
