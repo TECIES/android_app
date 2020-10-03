@@ -39,7 +39,7 @@ const theme = {
   roundness: 2,
   colors: {
     ...DarkTheme.colors,
-    primary: '#b4e3a1',
+    primary: '#1413a1',
     accent: '#62991a',
   },
 };
