@@ -17,6 +17,8 @@ const ProfileStack = createStackNavigator();
 const SplashStack = createStackNavigator();
 const DrawerNav = createDrawerNavigator();
 
+// Splash Screen is the set of 3 intro slides 
+
 function checkSplashShown() {
   try {
   AsyncStorage.getItem("splashShown").then((item) => {
@@ -44,6 +46,7 @@ const theme = {
   },
 };
 
+// update login based on google later
 
 const Main = () => {
   const [splashShown, setSplash] = React.useState(false);
@@ -99,5 +102,7 @@ const Main = () => {
     </PaperProvider>
   );
 };
+
+// to:do fix set state functions using onchange listener
 
 export default Main;
