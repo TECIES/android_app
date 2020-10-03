@@ -1,6 +1,6 @@
 import React from "react";
 import {DarkTheme, Provider as PaperProvider, Text, Button } from "react-native-paper";
-import App from "./src/app";
+
 import DetailForm from "./src/detailForm";
 import VerifyMobile from "./src/verifyMobile";
 import DriverDetails from "./src/driverDetails";
