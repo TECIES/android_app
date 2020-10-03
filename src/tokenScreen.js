@@ -16,6 +16,8 @@ import { StyleSheet, View } from "react-native";
 
 import MapView, { Marker, Polyline } from "react-native-maps";
 
+//to:do  replace mapview with mapbox after moving over to react native instead of expo 
+
 var _map: MapView;
 
 var road_coords = [

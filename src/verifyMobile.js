@@ -11,6 +11,8 @@ import {
 } from "react-native-paper";
 import { StyleSheet, View } from "react-native";
 
+// to:do implement firebase totp function to verify mobile number 
+
 const VerifyMobile = (props) => {
     const { navigation } = props;
     return (
